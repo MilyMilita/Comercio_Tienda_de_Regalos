@@ -1,0 +1,616 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="~/image/favicon.png" rel="icon" />
+    <title>ZafiroShop</title>
+    <meta name="description" content="Responsive and clean html template design for any kind of ecommerce webshop">
+    <!-- CSS Part Start-->
+    <link rel="stylesheet" type="text/css" href="~/js/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/owl.transitions.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/stylesheet-skin2.css" />
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Droid+Sans' type='text/css'>
+    <!-- CSS Part End-->
+</head>
+<body>
+    <div class="wrapper-wide">
+        <div id="header">
+            <!-- Top Bar Start-->
+            <nav id="top" class="htop">
+                <div class="container">
+                    <div class="row">
+                        <span class="drop-icon visible-sm visible-xs"><i class="fa fa-align-justify"></i></span>
+                        <div class="pull-left flip left-top">
+                            <div class="links">
+                                <ul>
+                                    <li class="mobile"><i class="fa fa-phone"></i>+91 9898777656</li>
+                                    <li class="email"><a href="mailto:info@marketshop.com"><i class="fa fa-envelope"></i>ZafiroShop@gmail.com</a></li>
+                                    <li class="wrap_custom_block hidden-sm hidden-xs">
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="language" class="btn-group">
+                                <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> <img src="~/image/flags/pe.png" alt="Perú" title="Perú">Perú <i class="fa fa-caret-down"></i></span></button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button class="btn btn-link btn-block language-select" type="button" name="GB"><img src="~/image/flags/pe.png" alt="Perú" title="Perú" /> Perú</button>
+                                    </li>
+                                    <li>
+                                        <button class="btn btn-link btn-block language-select" type="button" name="GB"><img src="~/image/flags/us.png" alt="English" title="English" /> English</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="currency" class="btn-group">
+                                <button class="btn-link dropdown-toggle" data-toggle="dropdown"> <span> S/. PEN <i class="fa fa-caret-down"></i></span></button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button>
+                                    </li>
+                                    <li>
+                                        <button class="currency-select btn btn-link btn-block" type="button" name="PEN">S/. Soles</button>
+                                    </li>
+                                    <li>
+                                        <button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="top-links" class="nav pull-right flip">
+                            <ul>
+                                <li><a href="login.html">Ingresar</a></li>
+                                <li><a href="register.html">Registrarse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Top Bar End-->
+            <!-- Header Start-->
+            <header class="header-row">
+                <div class="container">
+                    <div class="table-container">
+                        <!-- Logo Start -->
+                        <div class="col-table-cell col-lg-6 col-md-6 col-sm-12 col-xs-12 inner">
+                            <div id="logo"><a href="@Url.Action("Index","Home")"><img class="img-responsive" src="~/image/logo.png" title="ZafiroShop" alt="ZafiroShop" /></a></div>
+                        </div>
+                        <!-- Logo End -->
+                        <!-- Mini Cart Start-->
+                        <div class="col-table-cell col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div id="cart">
+                                <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="heading dropdown-toggle">
+                                    <span class="cart-icon pull-left flip"></span>
+                                    <span id="cart-total"> <span id="nroProductosCarrito">item(s) </span> - <span id="totalCompraCarrito">S/. 0.00</span> </span>
+                                </button>
+                               
+                            </div>
+                        </div>
+                        <!-- Mini Cart End-->
+                        <!-- Search Start-->
+                        <div class="col-table-cell col-lg-3 col-md-3 col-sm-6 col-xs-12 inner">
+                            <div id="search" class="input-group">
+                                <form class="navbar-form pull-right" action="@Url.Action("Buscar","Home")" method="get">
+                                    <input type="text" class="form-control input-lg" name="id" id="navSearchInput" value="" placeholder="Buscar" />
+                                    <button type="submit" class="button-search"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Search End-->
+                    </div>
+                </div>
+            </header>
+            <!-- Header End-->
+            <!-- Main Menu Start-->
+            <nav id="menu" class="navbar">
+                <div class="navbar-header"> <span class="visible-xs visible-sm"> Menu <b></b></span></div>
+                <div class="container">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a class="home_link" title="Home" href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="category.html">Mujer</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="category.html">Bolso <span>&rsaquo;</span></a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a href="category.html">Sub Categories </a> </li>
+                                                    <li><a href="category.html">Sub Categories </a> </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="category.html">Joyeria</a> </li>
+                                        <li>
+                                            <a href="category.html">Accesorios<span>&rsaquo;</span></a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="category.html">Hombre</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="category.html">Reloj <span>&rsaquo;</span></a>
+
+                                        </li>
+                                        <li>
+                                            <a href="category.html">Accesorios <span>&rsaquo;</span></a>
+
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="category.html">Niños</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+
+                                        <li><a href="category.html">Girls</a> </li>
+                                        <li><a href="category.html">Boys</a> </li>
+                                        <li><a href="category.html">Baby</a> </li>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="category.html">Aficiones</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li> <a href="category.html">Cocina</a></li>
+                                        <li> <a href="category.html">Musica</a></li>
+                                        <li> <a href="category.html">Video Juegos</a></li>
+                                        <li> <a href="category.html">Deportistas</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="category.html">Dias Especiales</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li> <a href="category.html">Día de la Madre</a></li>
+                                        <li> <a href="category.html">Día del Padre</a></li>
+                                        <li> <a href="category.html">Quiciañera</a></li>
+                                        <li> <a href="category.html">Aniversario</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="category.html">Personalizaciones</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li> <a href="category.html">Polos</a></li>
+                                        <li> <a href="category.html">Peluches</a></li>
+                                        <li> <a href="category.html">Joyeria</a></li>
+                                        <li> <a href="category.html">Accesorios</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Main Menu End-->
+        </div>
+        <div id="container">
+            <div class="container">
+                <!-- Breadcrumb Start-->
+                <ul class="breadcrumb">
+                    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+                <!-- Breadcrumb End-->
+                <div class="row">
+                    <!--Middle Part Start-->
+                    <div id="content" class="col-sm-12">
+                        <h1 class="title">Comprar</h1>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><i class="fa fa-sign-in"></i> Crear o acceder a su cuenta</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" value="register" name="account">
+                                                Registrarse
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" checked="checked" value="guest" name="account">
+                                                Usar cuenta
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><i class="fa fa-user"></i> Información Personal</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <fieldset id="account">
+                                            <div class="form-group required">
+                                                <label for="input-payment-firstname" class="control-label">Nombres</label>
+                                                <input type="text" class="form-control" id="input-payment-firstname" placeholder="Nombres" value="" name="firstname">
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-payment-lastname" class="control-label">Apellidos</label>
+                                                <input type="text" class="form-control" id="input-payment-lastname" placeholder="Apellidos" value="" name="lastname">
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-payment-email" class="control-label">E-Mail</label>
+                                                <input type="text" class="form-control" id="input-payment-email" placeholder="E-Mail" value="" name="email">
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-payment-telephone" class="control-label">Telefono</label>
+                                                <input type="text" class="form-control" id="input-payment-telefono" placeholder="Telephone" value="" name="telephone">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><i class="fa fa-book"></i> Dirección</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <fieldset id="address" class="required">
+                                            <div class="form-group">
+                                                <label for="input-payment-company" class="control-label">Empresa</label>
+                                                <input type="text" class="form-control" id="input-payment-company" placeholder="Empresa" value="" name="company">
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-payment-address-1" class="control-label">Dirección 1</label>
+                                                <input type="text" class="form-control" id="input-payment-address-1" placeholder="Dirección" value="" name="address_1">
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-payment-city" class="control-label">Ciudad</label>
+                                                <input type="text" class="form-control" id="input-payment-city" placeholder="Ciudad" value="" name="city">
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-payment-postcode" class="control-label">Telefono</label>
+                                                <input type="text" class="form-control" id="input-payment-postcode" placeholder="Telefono" value="" name="postcode">
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-payment-country" class="control-label">Ciudad</label>
+                                                <select class="form-control" id="input-payment-country" name="country_id">
+                                                    <option value=""> --- Seleccione --- </option>
+                                                    <option value="1">Afghanistan</option>
+                                                    <option value="2">Albania</option>
+                                                    <option value="3">Algeria</option>
+                                                    <option value="4">American Samoa</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group required">
+                                                <label for="input-payment-zone" class="control-label">Region / State</label>
+                                                <select class="form-control" id="input-payment-zone" name="zone_id">
+                                                    <option value=""> --- Please Select --- </option>
+                                                    <option value="3513">Aberdeen</option>
+                                                    <option value="3514">Aberdeenshire</option>
+                                                </select>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" checked="checked" value="1" name="shipping_address">
+                                                    My delivery and billing addresses are the same.
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><i class="fa fa-truck"></i> Metodo de envio</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <p>Selecione el tipo de envio para su compra</p>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" checked="checked" name="Free Shipping">
+                                                        Recoger en tienda - S/. 0.00
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="Flat Shipping Rate">
+                                                        Delivery - S/. 8.00
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><i class="fa fa-credit-card"></i> Metodos de pago</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <p>Selecione el metodo de pago de su preferencia para realizar su compra</p>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" checked="checked" name="Cash On Delivery">
+                                                        Contra Entrega
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="Bank Transfer">
+                                                        Transferencia Bancaria
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="Paypal">
+                                                        Paypal
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><i class="fa fa-ticket"></i> Usar cupón de puntos</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <label for="input-coupon" class="col-sm-3 control-label">Ingrese código de cupón</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="input-coupon" placeholder="Enter your coupon here" value="" name="coupon">
+                                                    <span class="input-group-btn">
+                                                        <input type="button" class="btn btn-primary" data-loading-text="Loading..." id="button-coupon" value="Apply Coupon">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><i class="fa fa-gift"></i> Usar vaucher de descuento</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <label for="input-voucher" class="col-sm-3 control-label">Ingresar el codigo del vaucher</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="input-voucher" placeholder="Enter your gift voucher code here" value="" name="voucher">
+                                                    <span class="input-group-btn">
+                                                        <input type="submit" class="btn btn-primary" data-loading-text="Loading..." id="button-voucher" value="Apply Voucher">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><i class="fa fa-shopping-cart"></i> Carrito de Compras</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <td class="text-center">Imagen</td>
+                                                                <td class="text-left">Nombre del Producto</td>
+                                                                <td class="text-left">Cantidad</td>
+                                                                <td class="text-right">Precio Unitario</td>
+                                                                <td class="text-right">Total</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="itemcarrito">
+                                                           
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <td class="text-right" colspan="4"><strong>Total:</strong></td>
+                                                                <td class="text-right" id="totalCompra">S/. 0.00</td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><i class="fa fa-pencil"></i> Dedicatoria para su regalo y tipo de empaque</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <textarea rows="4" class="form-control" id="confirm_comment" name="comments"></textarea>
+                                                <br>
+                                                <label class="control-label" for="confirm_agree">
+                                                    <input type="checkbox" checked="checked" value="1" required="" class="validate required" id="confirm_agree" name="confirm agree">
+                                                    <span>He leido los <a class="agree" href="#"><b>Terminos &amp; Condisiones</b></a></span>
+                                                </label>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="buttons">
+                                        <div class="pull-right">
+                                            <input type="button" class="btn btn-primary" id="btnConfirmar" value="Comfirmar orden">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Middle Part End -->
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Start-->
+        <footer id="footer">
+            <div class="fpart-first">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <h5>ZafiroShop</h5>
+                            <p>ZafiroShop es una empresa dedicada al comercio de articulos variados para regalos, brindando productos de calidad.</p>
+                            <img alt="" src="~/image/logo-small.png">
+                        </div>
+                        <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                            <h5>Información</h5>
+                            <ul>
+                                <li><a href="about-us.html">Sobre Nosotros</a></li>
+                                <li><a href="about-us.html">Delivery</a></li>
+                                <li><a href="about-us.html">Politicas de privacidad</a></li>
+                                <li><a href="about-us.html">Terminos y condiciones</a></li>
+                            </ul>
+                        </div>
+                        <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                            <h5>Servicios</h5>
+                            <ul>
+                                <li><a href="contact-us.html">Contactenos</a></li>
+                                <li><a href="sitemap.html">Mapa de la tienda</a></li>
+                            </ul>
+                        </div>
+                        <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                            <h5>Extras</h5>
+                            <ul>
+
+                                <li><a href="#">Vales de descuento</a></li>
+                                <li><a href="#">Afiliarse</a></li>
+                                <li><a href="#">Especiales</a></li>
+                            </ul>
+                        </div>
+                        <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                            <h5>Mi cuenta</h5>
+                            <ul>
+                                <li><a href="#">Mi cuenta</a></li>
+                                <li><a href="#">Historial de compras</a></li>
+                                <li><a href="#">Ofertas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fpart-second">
+                <div class="container">
+                    <div id="powered" class="clearfix">
+                        <div class="powered_text pull-left flip">
+                            <p>Tienda virtual ZafiroShop © 2017 | diseño By <a href="http://harnishdesign.net" target="_blank">ZafiroShop</a></p>
+                        </div>
+                        <div class="social pull-right flip"> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/socialicons/facebook.png" alt="Facebook" title="Facebook"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/socialicons/twitter.png" alt="Twitter" title="Twitter"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/socialicons/google_plus.png" alt="Google+" title="Google+"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/socialicons/pinterest.png" alt="Pinterest" title="Pinterest"> </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/socialicons/rss.png" alt="RSS" title="RSS"> </a> </div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="custom-text text-center">
+                            <p>This is a CMS block. You can insert any content (HTML, Text, Images) Here.<br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                        <div class="payments_types"> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/payment/payment_paypal.png" alt="paypal" title="PayPal"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/payment/payment_american.png" alt="american-express" title="American Express"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/payment/payment_2checkout.png" alt="2checkout" title="2checkout"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/payment/payment_maestro.png" alt="maestro" title="Maestro"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/payment/payment_discover.png" alt="discover" title="Discover"></a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="~/image/payment/payment_mastercard.png" alt="mastercard" title="MasterCard"></a> </div>
+                    </div>
+                </div>
+            </div>
+            <div id="back-top"><a data-toggle="tooltip" title="Back to Top" href="javascript:void(0)" class="backtotop"><i class="fa fa-chevron-up"></i></a></div>
+        </footer>
+        <!--Footer End-->
+        <!-- Twitter Side Block Start -->
+        <div id="twitter_footer" class="twit-right sort-order-1">
+            <div class="twitter_icon"><i class="fa fa-twitter"></i></div>
+            <a class="twitter-timeline" href="https://twitter.com/" data-chrome="nofooter noscrollbar transparent" data-theme="light" data-tweet-limit="2" data-related="twitterapi,twitter" data-aria-polite="assertive" data-widget-id="347621595801608192">Tweets by </a>
+            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+        </div>
+        <!-- Twitter Side Block End -->
+        <!-- Facebook Side Block Start -->
+        <div id="facebook" class="fb-right sort-order-2">
+            <div class="facebook_icon"><i class="fa fa-facebook"></i></div>
+            <div class="fb-page" data-href="https://www.facebook.com/harnishdesign/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="false">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/harnishdesign/"><a href="https://www.facebook.com/harnishdesign/">Harnish Design</a></blockquote>
+                </div>
+            </div>
+            <div id="fb-root"></div>
+            <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+        </div>
+        <!-- Facebook Side Block End -->
+    </div>
+
+    <!-- JS Part Start-->
+    <script type="text/javascript" src="~/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/js/jquery.easing-1.3.min.js"></script>
+    <script type="text/javascript" src="~/js/jquery.dcjqaccordion.min.js"></script>
+    <script type="text/javascript" src="~/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/js/custom.js"></script>
+    <!-- JS Part End-->
+
+    <script>
+        $(function () {
+            var carrito = localStorage.getItem("carrito");
+            var productos = [];
+            if (carrito != null) {
+                productos = JSON.parse(carrito);
+                CargarProductos(productos);
+            }
+            $("#btnConfirmar").click(function () {
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'json',
+                    contentType: "application/json; charset=utf-8",
+                    url: '@Url.Action("RealizarPedido","Compra")',
+                    data: carrito,
+                    success: function () {
+                        localStorage.removeItem("carrito");
+                        window.location = '@Url.Action("Index","Home")';
+                    }
+                });
+
+            });
+                  
+                });
+        function CargarProductos(productos) {
+            var html = '';
+            var total = 0;
+
+            $.each(productos, function () {
+                total += this.Precio * this.Cantidad
+                html += 
+                           ' <tr>'+
+                            ' <td class="text-center"><a href="product.html"><img src="/ImgProductos/' + this.Imagen + '" width="70" height="50"></a></td>'+
+                            ' <td class="text-left" >' + this.Denominacion + '<a href="product.html"></a></td>' +
+                            ' <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;"><input type="text" name="quantity" value=' + this.Cantidad + ' size="1" class="form-control">' +
+                            '<span class="input-group-btn">'+
+                            '<button type="submit" data-toggle="tooltip" title="Update" class="btn btn-primary"><i class="fa fa-refresh"></i></button>'+
+                            '<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick=""><i class="fa fa-times-circle"></i></button></span></div></td>' +
+                            '<td class="text-right">' + this.Precio + '</td>' +
+                            '<td class="text-right">' + this.Precio * this.Cantidad + '</td>' +
+                            '</tr>'        });
+            $('#itemcarrito').html(html);
+
+            $("#totalCompra").text('S/.' + total);
+        }
+    </script>
+
+</body>
+</html>
