@@ -829,6 +829,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="image\logos\" />
     <Folder Include="ImgProductos\" />
   </ItemGroup>
   <ItemGroup>
